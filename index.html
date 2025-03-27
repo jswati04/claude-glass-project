@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JGS Industries - Premium Glass Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modern-styles.css">
+    <link rel="stylesheet" href="css/new-sections.css">
+    <style>
+        /* 3D Glass Visualization Styles */
+        .glass-visualization-container {
+            padding: 96px 0;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .container-3d {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-16 {
+            margin-bottom: 64px;
+        }
+
+        .mb-8 {
+            margin-bottom: 32px;
+        }
+
+        .mb-4 {
+            margin-bottom: 16px;
+        }
+
+        .mb-2 {
+            margin-bottom: 8px;
+        }
+
+        .text-4xl {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .text-xl {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .text-gray-900 {
+            color: #1a202c;
+        }
+
+        .text-gray-800 {
+            color: #2d3748;
+        }
+
+        .text-gray-600 {
+            color: #4b5563;
+        }
+
+        .text-white {
+            color: white;
+        }
+
+        .max-w-2xl {
+            max-width: 42rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .w-24 {
+            width: 96px;
+        }
+
+        .h-1 {
+            height: 4px;
+        }
+
+        .bg-blue-700 {
+            background-color: #2b6cb0;
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .mt-6 {
+            margin-top: 24px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .gap-4 {
+            gap: 16px;
+        }
+
+        .gap-2 {
+            gap: 8px;
+        }
+
+        .px-4 {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .py-2 {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        .rounded-md {
+            border-radius: 6px;
+        }
+
+        .transition-colors {
+            transition-property: background-color, border-color, color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+
+        .hover\:bg-blue-800:hover {
+            background-color: #2c5282;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .inset-0 {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .top-1\/2 {
+            top: 50%;
+        }
+
+        .left-1\/2 {
+            left: 50%;
+        }
+
+        .transform {
+            transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .-translate-x-1\/2 {
+            --tw-translate-x: -50%;
+        }
+
+        .-translate-y-1\/2 {
+            --tw-translate-y: -50%;
+        }
+
+        .w-72 {
+            width: 288px;
+        }
+
+        .h-72 {
+            height: 288px;
+        }
+
+        .rounded-md {
+            border-radius: 6px;
+        }
+
+        .border {
+            border-width: 1px;
+        }
+
+        .border-white {
+            border-color: white;
+        }
+
+        .border-opacity-60 {
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .shadow-xl {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .backdrop-filter {
+            backdrop-filter: blur(8px);
+        }
+
+        .p-6 {
+            padding: 24px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        /* Glass color classes */
+        .bg-blue-100 {
+            background-color: #dbeafe;
+        }
+
+        .bg-blue-200 {
+            background-color: #bfdbfe;
+        }
+
+        .bg-green-100 {
+            background-color: #d1fae5;
+        }
+
+        .bg-purple-100 {
+            background-color: #ede9fe;
+        }
+
+        .bg-yellow-100 {
+            background-color: #fef3c7;
+        }
+
+        .bg-pink-100 {
+            background-color: #fce7f3;
+        }
+
+        .bg-gray-100 {
+            background-color: #f3f4f6;
+        }
+
+        .bg-red-100 {
+            background-color: #fee2e2;
+        }
+
+        .bg-blue-300 {
+            background-color: #93c5fd;
+        }
+
+        /* 3D transform styles */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+
+        .transform-style-3d {
+            transform-style: preserve-3d;
+        }
+
+        .glass-showcase {
+            position: relative;
+            height: 600px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .rotating-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+
+        .glass-panel {
+            position: absolute;
+            width: 288px;
+            height: 288px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            backdrop-filter: blur(8px);
+            backface-visibility: visible;
+            transform-origin: center;
+        }
+
+        .glass-panel-content {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            text-align: center;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .animate-rotate {
+            animation: rotate 20s infinite linear;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="JGS Industries Logo">
+                        <h1>JGS Industries</h1>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="international.html">International</a></li>
+                    </ul>
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+            </nav>
+        </div>
+    </header>-->
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo-container">
+                <img src="images/logo.png" alt="JGS Industries Logo" class="loader-logo">
+                <div class="glass-reflection"></div>
+            </div>
+            <div class="company-name">JGS Industries</div>
+            <div class="loader-tagline">Premium Glass Solutions</div>
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loadingBar"></div>
+            </div>
+            <div class="loading-text" id="loadingText">Initializing...</div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <!-- Modern Header with Glass Effects -->
+        <header class="header-container">
+            <div class="header-inner">
+                <a href="index.html" class="logo-area">
+                    <img src="images/logo.png" alt="JGS Industries Logo" class="logo-img">
+                    <span class="brand-name">JGS Industeries</span>
+                </a>
+
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="international.html">International</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Rest of your page content -->
+        <div style="height: 5px; padding-top: 100px;">
+            <!--This is just to show scrolling effect, remove in your implementation-->
+        </div>
+
+        <script>
+            // Mobile menu toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                // Change icon based on menu state
+                const icon = mobileMenuBtn.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (event) => {
+                if (!event.target.closest('.mobile-menu-btn') && !event.target.closest('.nav-links')) {
+                    navLinks.classList.remove('active');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header-container');
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        </script>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Modern Hero Section with 3D Glass Elements -->
+            <section class="modern-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1>Premium Glass Solutions for Modern Architecture</h1>
+                            <p>Discover our innovative range of glass products designed to enhance safety, energy
+                                efficiency, and
+                                aesthetics for your architectural projects.</p>
+                            <div class="hero-buttons">
+                                <a href="products.html" class="btn btn-white">Explore Products</a>
+                                <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+                            </div>
+                        </div>
+                        <div class="hero-visual">
+                            <!-- 3D Glass Animation -->
+                            <div class="glass-3d-container">
+                                <div class="glass-pane glass-pane-1"></div>
+                                <div class="glass-pane glass-pane-2"></div>
+                                <div class="glass-pane glass-pane-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Wave Shape -->
+                <div class="wave-shape">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#ffffff" fill-opacity="1"
+                            d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                        </path>
+                    </svg>
+                </div>
+            </section>
+
+            <!-- Product Showcase Section -->
+            <section class="modern-products">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Our Premium Glass Solutions</h2>
+                        <div class="section-title-line"></div>
+                    </div>
+                    <div class="product-grid">
+                        <!-- Tempered Glass Card -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-image-overlay"></div>
+                                <div class="product-image-glass"></div>
+                            </div>
+                            <div class="product-details">
+                                <h3>Tempered Glass</h3>
+                                <p>Enhanced strength and safety with our heat-treated tempered glass solutions.</p>
+                                <a href="products.html#tempered" class="read-more">Learn More <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Double Glazed Glass Card -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-image-overlay"></div>
+                                <div class="product-image-glass double-glazed">
+                                    <div class="inner-layer"></div>
+                                </div>
+                            </div>
+                            <div class="product-details">
+                                <h3>Double Glazed Glass</h3>
+                                <p>Superior insulation and energy efficiency for your windows and facades.</p>
+                                <a href="products.html#double-glazed" class="read-more">Learn More <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Laminated Glass Card -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-image-overlay"></div>
+                                <div class="product-image-glass laminated">
+                                    <div class="inner-layer"></div>
+                                </div>
+                            </div>
+                            <div class="product-details">
+                                <h3>Laminated Glass</h3>
+                                <p>Enhanced security and sound insulation with our laminated safety glass.</p>
+                                <a href="products.html#laminated" class="read-more">Learn More <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Switchable Glass Card -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-image-overlay"></div>
+                                <div class="product-image-glass switchable"></div>
+                            </div>
+                            <div class="product-details">
+                                <h3>Switchable Glass</h3>
+                                <p>On-demand privacy with our innovative switchable glass technology.</p>
+                                <a href="products.html#switchable" class="read-more">Learn More <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3D Glass Visualization Section (Converted from React) -->
+            <section class="glass-visualization-container">
+                <div class="container-3d">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl text-gray-900 mb-4">Experience Our Glass Portfolio</h2>
+                        <p class="text-gray-600 max-w-2xl">
+                            Explore our diverse range of high-quality glass products through this interactive 3D
+                            visualization
+                        </p>
+                        <div class="w-24 h-1 bg-blue-700 mx-auto mt-6"></div>
+                    </div>
+
+                    <div class="mb-8 flex justify-center gap-4">
+                        <button id="rotation-toggle-btn"
+                            class="px-4 py-2 bg-blue-700 text-white rounded-md hover:bg-blue-800 transition-colors">
+                            Pause Rotation
+                        </button>
+
+                        <div class="flex items-center gap-2">
+                            <span class="text-gray-600">Speed:</span>
+                            <input type="range" id="rotation-speed-input" min="5" max="40" value="20" class="w-24">
+                        </div>
+                    </div>
+
+                    <div class="perspective-1000 glass-showcase">
+                        <div id="glass-rotation-container" class="rotating-container animate-rotate">
+                            <!-- Glass panels will be added here by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Company Section -->
+            <section class="about-company">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-image">
+                            <div class="about-image-placeholder">
+                                <span>JGS Industries Facility</span>
+                            </div>
+                        </div>
+                        <div class="about-text">
+                            <h2>About JGS Industries</h2>
+                            <p>With over 20 years of experience in the glass industry, JGS Industries has established
+                                itself
+                                as a leader in innovative glass solutions. We combine cutting-edge technology with
+                                expert
+                                craftsmanship to deliver premium glass products for architectural, commercial, and
+                                residential applications.</p>
+                            <p>Our commitment to quality, sustainability, and customer satisfaction drives everything we
+                                do.
+                                We work closely with architects, designers, and contractors to provide customized glass
+                                solutions that meet their specific requirements.</p>
+                            <div class="stats-row">
+                                <div class="stat-box">
+                                    <h3>20+</h3>
+                                    <p>Years of Experience</p>
+                                </div>
+                                <div class="stat-box">
+                                    <h3>500+</h3>
+                                    <p>Projects Completed</p>
+                                </div>
+                                <div class="stat-box">
+                                    <h3>9</h3>
+                                    <p>Glass Product Lines</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Customer Reviews Section -->
+            <section class="customer-reviews-section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>What Our Clients Say</h2>
+                        <p>Trusted by architects, designers, and builders worldwide</p>
+                        <div class="section-title-line"></div>
+                    </div>
+
+                    <div class="review-stats">
+                        <div class="overall-rating">
+                            <div class="rating-number">4.8</div>
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="rating-count">based on 128 reviews</div>
+                        </div>
+
+                        <div class="rating-breakdown">
+                            <div class="rating-bar">
+                                <span class="rating-label">5 stars</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%;"></div>
+                                </div>
+                                <span class="rating-percent">75%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-label">4 stars</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 20%;"></div>
+                                </div>
+                                <span class="rating-percent">20%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-label">3 stars</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 3%;"></div>
+                                </div>
+                                <span class="rating-percent">3%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-label">2 stars</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 1%;"></div>
+                                </div>
+                                <span class="rating-percent">1%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-label">1 star</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 1%;"></div>
+                                </div>
+                                <span class="rating-percent">1%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-filter">
+                        <div class="filter-buttons">
+                            <button class="review-filter-btn active" data-filter="all">All Reviews</button>
+                            <button class="review-filter-btn" data-filter="residential">Residential</button>
+                            <button class="review-filter-btn" data-filter="commercial">Commercial</button>
+                            <button class="review-filter-btn" data-filter="international">International</button>
+                        </div>
+                        <div class="reviews-sort">
+                            <label for="review-sort">Sort by:</label>
+                            <select id="review-sort" class="review-sort-select">
+                                <option value="recent">Most Recent</option>
+                                <option value="highest">Highest Rating</option>
+                                <option value="lowest">Lowest Rating</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="reviews-grid">
+                        <!-- Review Card 1 -->
+                        <div class="review-card" data-type="commercial" data-rating="5" data-date="2025-02-15">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-img">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Robert Kim">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>Robert Kim</h4>
+                                        <p>Principal Architect, Skyline Designs</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>5.0</span>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>"As an architect, I've worked with many glass suppliers, but JGS stands out for their
+                                    commitment to quality and innovation. Their technical expertise and ability to
+                                    deliver
+                                    custom solutions make them our preferred partner for all projects."</p>
+                            </div>
+                            <div class="review-footer">
+                                <div class="review-date">February 15, 2025</div>
+                                <div class="review-project">The Heights Tower, New York</div>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 2 -->
+                        <div class="review-card" data-type="residential" data-rating="5" data-date="2025-03-01">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-img">
+                                        <img src="https://randomuser.me/api/portraits/women/65.jpg"
+                                            alt="Sarah Mitchell">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>Sarah Mitchell</h4>
+                                        <p>Homeowner</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>5.0</span>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>"We worked with JGS Industries on our home renovation project, and they exceeded our
+                                    expectations. Their custom shower enclosures and mirrors transformed our bathrooms.
+                                    Highly recommend their products and services!"</p>
+                            </div>
+                            <div class="review-footer">
+                                <div class="review-date">March 1, 2025</div>
+                                <div class="review-project">Residential Renovation</div>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 3 -->
+                        <div class="review-card" data-type="international" data-rating="5" data-date="2025-01-10">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-img">
+                                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Hans Mueller">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>Hans Mueller</h4>
+                                        <p>Project Manager, Deutsche Baugruppe</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>5.0</span>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>"Working with JGS Industries on our Berlin office tower project was an excellent
+                                    experience. Despite the international logistics, their team managed the export
+                                    process
+                                    flawlessly. The quality of their fire-rated glass panels met all European
+                                    standards."
+                                </p>
+                            </div>
+                            <div class="review-footer">
+                                <div class="review-date">January 10, 2025</div>
+                                <div class="review-project">Berlin Office Tower, Germany</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-pagination">
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn">Next <i class="fas fa-chevron-right"></i></button>
+                    </div>
+
+                    <div class="review-cta">
+                        <h3>Ready to experience our premium glass solutions?</h3>
+                        <div class="cta-buttons">
+                            <a href="contact.html" class="btn">Request a Quote</a>
+                            <a href="international.html" class="btn btn-secondary">Learn About Our Global Reach</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <div class="container">
+                <section class="cta-section">
+                    <div class="cta-content">
+                        <h2>Need a Custom Glass Solution?</h2>
+                        <p>Our team of experts is ready to help you find the perfect glass solution for your project.
+                            Contact us today for a consultation or request a custom quote.</p>
+                        <div class="cta-buttons">
+                            <a href="contact.html" class="btn btn-white">Contact Us</a>
+                            <a href="#" class="btn btn-outline">Request Quote</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-col">
+                        <h3>JGS Industries</h3>
+                        <p>Premium glass solutions for modern architecture. Enhancing safety, efficiency, and aesthetics
+                            in
+                            every project.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="international.html">International</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="products.html#tempered">Tempered Glass</a></li>
+                            <li><a href="products.html#double-glazed">Double Glazed Glass</a></li>
+                            <li><a href="products.html#laminated">Laminated Glass</a></li>
+                            <li><a href="products.html#switchable">Switchable Glass</a></li>
+                            <li><a href="products.html#fire-rated">Fire Rated Glass</a></li>
+                            <li><a href="products.html#bullet-proof">Bullet Proof Glass</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Glass Street, Industrial Area</li>
+                            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                            <li><i class="fas fa-envelope"></i> info@jgsindustries.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 JGS Industries. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Loading animation sequence
+        document.addEventListener('DOMContentLoaded', function () {
+            const loadingBar = document.getElementById('loadingBar');
+            const loadingText = document.getElementById('loadingText');
+            const pageLoader = document.querySelector('.page-loader');
+            const pageContent = document.querySelector('.page-content');
+
+            const loadingTexts = [
+                "Initializing...",
+                "Loading resources...",
+                "Preparing glass display...",
+                "Polishing interface...",
+                "Almost ready..."
+            ];
+
+            let progress = 0;
+            let textIndex = 0;
+
+            // Simulate loading progress
+            const loadingInterval = setInterval(() => {
+                progress += Math.random() * 10;
+
+                if (progress > 100) progress = 100;
+
+                loadingBar.style.width = `${progress}%`;
+
+                // Update loading text at intervals
+                if (progress > textIndex * 20) {
+                    if (textIndex < loadingTexts.length) {
+                        loadingText.textContent = loadingTexts[textIndex];
+                        textIndex++;
+                    }
+                }
+
+                // When loading is complete
+                if (progress === 100) {
+                    clearInterval(loadingInterval);
+
+                    // Show completed message
+                    loadingText.textContent = "Ready!";
+
+                    // Delay before hiding loader
+                    setTimeout(() => {
+                        // Hide loader and show content
+                        pageLoader.style.opacity = '0';
+                        pageLoader.style.visibility = 'hidden';
+                        pageContent.style.opacity = '1';
+
+                        // Enable scrolling
+                        document.body.style.overflow = 'auto';
+
+                        // Remove loader from DOM after transition
+                        setTimeout(() => {
+                            pageLoader.remove();
+                        }, 600);
+                    }, 800);
+                }
+            }, 200);
+
+            // Initially disable scrolling during loading
+            document.body.style.overflow = 'hidden';
+        });
+
+        //Mobile menu toggle
+        /*const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                // Change icon based on menu state
+                const icon = mobileMenuBtn.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
+*/
+        // Close menu when clicking outside
+        document.addEventListener('click', (event) => {
+            if (navLinks && navLinks.classList.contains('active') &&
+                !event.target.closest('.mobile-menu-btn') &&
+                !event.target.closest('.nav-links')) {
+                navLinks.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/modern-scripts.js"></script>
+    <script src="js/new-features.js"></script>
+    <!-- 3D Glass Visualization Script (Converted from React) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // State variables (equivalent to React's useState)
+            let isRotating = true;
+            let currentSpeed = 20;
+
+            // Glass types data
+            const glassTypes = [
+                { name: "Tempered Glass", color: "bg-blue-100", description: "Heat-treated for enhanced strength" },
+                { name: "Double Glazed Glass", color: "bg-blue-200", description: "Superior thermal insulation" },
+                { name: "Laminated Glass", color: "bg-green-100", description: "Enhanced security and safety" },
+                { name: "Colored Laminated Glass", color: "bg-purple-100", description: "Decorative and protective" },
+                { name: "Georgian Bar Glass", color: "bg-yellow-100", description: "Classic divided light appearance" },
+                { name: "Fabric Glass", color: "bg-pink-100", description: "Embedded fabric for aesthetics" },
+                { name: "Switchable Glass", color: "bg-gray-100", description: "On-demand privacy control" },
+                { name: "Fire Rated Glass", color: "bg-red-100", description: "Fire protection for safety" },
+                { name: "Bullet Proof Glass", color: "bg-blue-300", description: "High-security protection" }
+            ];
+
+            // DOM elements
+            const rotationContainer = document.getElementById('glass-rotation-container');
+            const toggleButton = document.getElementById('rotation-toggle-btn');
+            const speedInput = document.getElementById('rotation-speed-input');
+
+            // Create glass panels
+            function createGlassPanels() {
+                // Clear existing panels
+                rotationContainer.innerHTML = '';
+
+                // Create panels
+                glassTypes.forEach((glass, index) => {
+                    const angle = (360 / glassTypes.length) * index;
+
+                    // Create panel element
+                    const panel = document.createElement('div');
+                    panel.className = `glass-panel ${glass.color}`;
+                    panel.style.transform = `translateX(-50%) translateY(-50%) rotateY(${angle}deg) translateZ(300px)`;
+
+                    // Create content container
+                    const content = document.createElement('div');
+                    content.className = 'glass-panel-content';
+
+                    // Add title and description
+                    content.innerHTML = `
+                        <h3 class="text-xl text-gray-800 mb-2">${glass.name}</h3>
+                        <p class="text-gray-600">${glass.description}</p>
+                    `;
+
+                    // Add content to panel
+                    panel.appendChild(content);
+
+                    // Add panel to container
+                    rotationContainer.appendChild(panel);
+                });
+            }
+
+            // Initialize panels
+            createGlassPanels();
+
+            // Toggle rotation
+            toggleButton.addEventListener('click', function () {
+                isRotating = !isRotating;
+
+                if (isRotating) {
+                    rotationContainer.style.animation = `rotate ${currentSpeed}s infinite linear`;
+                    toggleButton.textContent = 'Pause Rotation';
+                } else {
+                    rotationContainer.style.animation = 'none';
+                    toggleButton.textContent = 'Start Rotation';
+                }
+            });
+
+            // Update rotation speed
+            speedInput.addEventListener('input', function () {
+                currentSpeed = this.value;
+
+                if (isRotating) {
+                    rotationContainer.style.animation = `rotate ${currentSpeed}s infinite linear`;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

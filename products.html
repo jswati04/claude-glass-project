@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JGS Industries - Glass Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modern-styles.css">
+    <link rel="stylesheet" href="css/new-sections.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="JGS Industries Logo">
+                        <h1>JGS Industries</h1>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Premium Glass Solutions</h1>
+                <p>Explore our comprehensive range of high-quality glass products designed for safety, efficiency, and
+                    aesthetic appeal.</p>
+            </div>
+        </section>
+
+        <!-- Modern Product Categories -->
+        <section class="modern-product-categories">
+            <!-- Add this to products.html after the section-title -->
+            <div class="filter-container">
+                <!-- Filter controls will be added by JS -->
+            </div>
+            <div class="filter-info">
+                <!-- Active filters will be shown here -->
+            </div>
+            <div class="results-counter">
+                Showing 9 of 9 products
+            </div>
+
+            <!-- Update each product card with data attributes -->
+            <div class="modern-product-card" data-category="tempered" data-application="residential commercial"
+                data-features="safety heat-resistant" data-popularity="95" data-date="2025-01-15">
+                <!-- Product card content -->
+            </div>
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Product Range</h2>
+                    <p>From tempered glass to double-glazed and laminated, our extensive product line caters to a
+                        diverse array of applications</p>
+                    <div class="section-title-line"></div>
+                </div>
+
+                <div class="category-tabs">
+                    <button class="category-tab active" data-target="all">All Products</button>
+                    <button class="category-tab" data-target="tempered">Tempered Glass</button>
+                    <button class="category-tab" data-target="double-glazed">Double Glazed</button>
+                    <button class="category-tab" data-target="laminated">Laminated</button>
+                    <button class="category-tab" data-target="colored">Colored Laminated</button>
+                    <button class="category-tab" data-target="georgian">Georgian Bars</button>
+                    <button class="category-tab" data-target="switchable">Switchable Glass</button>
+                    <button class="category-tab" data-target="fire-rated">Fire Rated</button>
+                    <button class="category-tab" data-target="bullet-proof">Bullet Proof</button>
+                </div>
+
+                <div class="modern-products-grid">
+                    <!-- Tempered Glass -->
+                    <div class="modern-product-card" data-category="tempered">
+                        <div class="product-image-container">
+                            <div class="product-background"></div>
+                            <div class="product-visualization">
+                                <div class="glass-pane tempered-glass"></div>
+                            </div>
+                            <div class="product-label">Tempered Glass</div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Tempered Glass</h3>
+                            <p>Our tempered glass is heat-treated to be approximately four times stronger than regular
+                                glass. When broken, it shatters into small, relatively harmless pieces.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">High Strength</span>
+                                <span class="feature-tag">Safety</span>
+                                <span class="feature-tag">Heat Resistant</span>
+                            </div>
+                            <a href="#tempered" class="read-more">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Double Glazed Glass -->
+                    <div class="modern-product-card" data-category="double-glazed">
+                        <div class="product-image-container">
+                            <div class="product-background"></div>
+                            <div class="product-visualization">
+                                <div class="glass-pane double-glazed-back"></div>
+                                <div class="glass-pane double-glazed-front"></div>
+                            </div>
+                            <div class="product-label">Double Glazed</div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Double Glazed Glass</h3>
+                            <p>Superior insulation with two glass panes separated by a vacuum or gas-filled space to
+                                reduce heat transfer and improve energy efficiency.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Thermal Insulation</span>
+                                <span class="feature-tag">Energy Efficient</span>
+                                <span class="feature-tag">Sound Reduction</span>
+                            </div>
+                            <a href="#double-glazed" class="read-more">View Details <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Laminated Glass -->
+                    <div class="modern-product-card" data-category="laminated">
+                        <div class="product-image-container">
+                            <div class="product-background"></div>
+                            <div class="product-visualization">
+                                <div class="glass-pane laminated-back"></div>
+                                <div class="glass-pane laminated-middle"></div>
+                                <div class="glass-pane laminated-front"></div>
+                            </div>
+                            <div class="product-label">Laminated Glass</div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Laminated Glass</h3>
+                            <p>Made by bonding two or more glass sheets with a PVB (polyvinyl butyral) interlayer,
+                                providing enhanced security and safety.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Security</span>
+                                <span class="feature-tag">UV Protection</span>
+                                <span class="feature-tag">Sound Insulation</span>
+                            </div>
+                            <a href="#laminated" class="read-more">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Switchable Glass -->
+                    <div class="modern-product-card" data-category="switchable">
+                        <div class="product-image-container">
+                            <div class="product-background"></div>
+                            <div class="product-visualization">
+                                <div class="glass-pane switchable-glass"></div>
+                            </div>
+                            <div class="product-label">Switchable Glass</div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Switchable Glass</h3>
+                            <p>On-demand privacy with our innovative technology that allows glass to change from
+                                transparent to opaque with the flick of a switch.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Privacy Control</span>
+                                <span class="feature-tag">Innovative</span>
+                                <span class="feature-tag">Modern Design</span>
+                            </div>
+                            <a href="#switchable" class="read-more">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Fire Rated Glass -->
+                    <div class="modern-product-card" data-category="fire-rated">
+                        <div class="product-image-container">
+                            <div class="product-background"></div>
+                            <div class="product-visualization">
+                                <div class="glass-pane fire-rated-glass"></div>
+                            </div>
+                            <div class="product-label">Fire Rated</div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Fire Rated Glass</h3>
+                            <p>Special glass designed to provide protection against fire, preventing the spread of
+                                flames, smoke, and heat for specified periods.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Fire Protection</span>
+                                <span class="feature-tag">Safety</span>
+                                <span class="feature-tag">Building Code Compliant</span>
+                            </div>
+                            <a href="#fire-rated" class="read-more">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Bullet Proof Glass -->
+                    <div class="modern-product-card" data-category="bullet-proof">
+                        <div class="product-image-container">
+                            <div class="product-background"></div>
+                            <div class="product-visualization">
+                                <div class="glass-pane bulletproof-glass1"></div>
+                                <div class="glass-pane bulletproof-glass2"></div>
+                                <div class="glass-pane bulletproof-glass3"></div>
+                                <div class="glass-pane bulletproof-glass4"></div>
+                            </div>
+                            <div class="product-label">Bullet Proof</div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Bullet Proof Glass</h3>
+                            <p>Multi-layered glass-plastic composites that can withstand one or more rounds of bullets
+                                depending on the thickness and rated protection level.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">High Security</span>
+                                <span class="feature-tag">Impact Resistant</span>
+                                <span class="feature-tag">Protection</span>
+                            </div>
+                            <a href="#bullet-proof" class="read-more">View Details <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-cta">
+                    <a href="contact.html" class="btn">Request Custom Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3D Glass Visualization -->
+        <section class="glass-visualization-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Experience Our Glass Portfolio</h2>
+                    <p>Explore our diverse range of high-quality glass products through this interactive 3D
+                        visualization</p>
+                    <div class="section-title-line"></div>
+                </div>
+
+                <div class="visualization-controls">
+                    <button id="toggle-rotation" class="btn">Pause Rotation</button>
+                    <div class="speed-control">
+                        <span>Speed:</span>
+                        <input type="range" id="rotation-speed" min="5" max="40" value="20">
+                    </div>
+                </div>
+
+                <div class="glass-3d-showcase">
+                    <div class="rotating-container" id="rotating-showcase">
+                        <!-- Glass panels will be added here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Display (Detailed information) -->
+        <section class="product-display">
+            <div class="container">
+                <!-- Tempered Glass -->
+                <div id="tempered" class="product-container">
+                    <div class="product-header">
+                        <h2>Tempered Glass</h2>
+                        <p>Heat-treated glass with enhanced strength and safety features</p>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-visual">
+                            <div class="product-image">
+                                <span>Tempered Glass (600x400)</span>
+                            </div>
+                            <div class="model-controls">
+                                <div class="model-btn" title="Rotate left"><i class="fas fa-undo"></i></div>
+                                <div class="model-btn" title="Zoom in"><i class="fas fa-search-plus"></i></div>
+                                <div class="model-btn" title="Zoom out"><i class="fas fa-search-minus"></i></div>
+                                <div class="model-btn" title="Rotate right"><i class="fas fa-redo"></i></div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-details">
+                                <h3>Tempered Safety Glass</h3>
+                                <p>Our tempered glass is heat-treated to create a product that is 4-5 times stronger
+                                    than annealed glass. When broken, it shatters into small granular pieces instead of
+                                    sharp shards, significantly reducing the risk of injury.</p>
+
+                                <div class="product-features">
+                                    <h4>Key Features:</h4>
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check-circle"></i> Enhanced strength and safety</li>
+                                        <li><i class="fas fa-check-circle"></i> Heat resistant up to 250°C</li>
+                                        <li><i class="fas fa-check-circle"></i> Shatters into small granular pieces when
+                                            broken</li>
+                                        <li><i class="fas fa-check-circle"></i> Meets international safety standards
+                                        </li>
+                                        <li><i class="fas fa-check-circle"></i> Available in various thicknesses and
+                                            sizes</li>
+                                    </ul>
+                                </div>
+
+                                <div class="technical-specs">
+                                    <h4>Technical Specifications</h4>
+                                    <table class="specs-table">
+                                        <tr>
+                                            <th>Thickness</th>
+                                            <td>4mm - 19mm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Strength</th>
+                                            <td>4-5 times stronger than annealed glass</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Heat Resistance</th>
+                                            <td>Up to 250°C</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Applications</th>
+                                            <td>Window panes, doors, shower enclosures, furniture</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div class="product-actions">
+                                    <a href="#" class="btn">Request Quote</a>
+                                    <a href="#" class="btn btn-secondary">Download Brochure</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Double Glazed Glass -->
+                <div id="double-glazed" class="product-container">
+                    <div class="product-header">
+                        <h2>Double Glazed Glass</h2>
+                        <p>Superior insulation and energy efficiency for modern buildings</p>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-visual">
+                            <div class="product-image">
+                                <span>Double Glazed Glass (600x400)</span>
+                            </div>
+                            <div class="model-controls">
+                                <div class="model-btn" title="Rotate left"><i class="fas fa-undo"></i></div>
+                                <div class="model-btn" title="Zoom in"><i class="fas fa-search-plus"></i></div>
+                                <div class="model-btn" title="Zoom out"><i class="fas fa-search-minus"></i></div>
+                                <div class="model-btn" title="Rotate right"><i class="fas fa-redo"></i></div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-details">
+                                <h3>Double Glazed Insulating Units</h3>
+                                <p>Our double glazed units consist of two glass panes separated by a spacer and sealed
+                                    to create an insulating air or gas-filled cavity. This design significantly improves
+                                    thermal and acoustic insulation, enhancing energy efficiency and comfort.</p>
+
+                                <div class="product-features">
+                                    <h4>Key Features:</h4>
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check-circle"></i> Superior thermal insulation</li>
+                                        <li><i class="fas fa-check-circle"></i> Excellent sound reduction</li>
+                                        <li><i class="fas fa-check-circle"></i> Reduces condensation on windows</li>
+                                        <li><i class="fas fa-check-circle"></i> Available with argon or krypton gas fill
+                                        </li>
+                                        <li><i class="fas fa-check-circle"></i> Compatible with various frame systems
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="technical-specs">
+                                    <h4>Technical Specifications</h4>
+                                    <table class="specs-table">
+                                        <tr>
+                                            <th>Total Thickness</th>
+                                            <td>18mm - 36mm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>U-Value</th>
+                                            <td>1.0 - 2.8 W/m²K (depending on configuration)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Sound Reduction</th>
+                                            <td>Up to 35dB</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Applications</th>
+                                            <td>Windows, doors, curtain walls, facades</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div class="product-actions">
+                                    <a href="#" class="btn">Request Quote</a>
+                                    <a href="#" class="btn btn-secondary">Download Brochure</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <div class="container">
+            <section class="cta-section">
+                <div class="cta-content">
+                    <h2>Need a Custom Glass Solution?</h2>
+                    <p>Our team of experts is ready to help you find the perfect glass solution for your project.
+                        Contact us today for a consultation or request a custom quote.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-white">Contact Us</a>
+                        <a href="#" class="btn btn-secondary">Request Quote</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>JGS Industries</h3>
+                    <p>Premium glass solutions for modern architecture. Enhancing safety, efficiency, and aesthetics in
+                        every project.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#tempered">Tempered Glass</a></li>
+                        <li><a href="#double-glazed">Double Glazed Glass</a></li>
+                        <li><a href="#laminated">Laminated Glass</a></li>
+                        <li><a href="#switchable">Switchable Glass</a></li>
+                        <li><a href="#fire-rated">Fire Rated Glass</a></li>
+                        <li><a href="#bullet-proof">Bullet Proof Glass</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Glass Street, Industrial Area</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@jgsindustries.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 JGS Industries. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/modern-scripts.js"></script>
+    <script src="js/glass-visualization.js"></script>
+    <script src="js/new-features.js"></script>
+</body>
+
+</html>
